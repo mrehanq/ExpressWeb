@@ -26,7 +26,7 @@ app.get("/weather",(req,res)=>{
 });
 app.get("*",(req,res)=>{
     res.render("Error",{
-        errorMSG: "Oops Page Not Found"
+        errorMSG: "Oops!!! This Page Not Found"
     });
 });
 app.listen(port,()=>{
