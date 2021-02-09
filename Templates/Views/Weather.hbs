@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>Links}}
+</head>
+<body>
+    {{>Navbar}}
+        <!-- main header -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+               <div class="main_content">
+                   <form class="temp_form">
+                       <input type="text" id="cityname" placeholder="Enter City Name" autocomplete="off">
+                       <input type="submit" value="search" id="submitbtn">                       
+                   </form>
+               </div>
+
+               <div class="tempinfo">
+                   <div class="top_layer">
+                       <p id="day">Tuehhhsday</p>
+                       <p id="date">11Feb</p>
+                   </div>
+
+                   <div class="main_layer">
+                       <p id="city_name">Get Output Here</p>
+                       <div class="middle_layer data_hide">
+                           <p class="temp"><span id="temp_deg">0</span> <sup>o</sup>C</p>
+                           <p id="temp_status"> <i class="fas fa-cloud"></i> </p>
+                       </div>
+                   </div>
+               </div>
+            </div> 
+        </div> 
+    </div>    
+
+    <!-- footer code  -->
+    {{>Footer}}
+</body>
+</html>
